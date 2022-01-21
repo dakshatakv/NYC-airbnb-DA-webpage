@@ -9,41 +9,82 @@
 		body{
 			margin-top: 10px;
 			margin-bottom: 50px;
+			margin-left: 50px;
+			margin-right: 50px;
 		}
 		h1{
 			text-align: center;
 			font-family: 'Lato', sans-serif;
 			font-size: 70px;
-			text-shadow: 2px 2px rgb(130,80,196);
 			text-decoration: underline;
 		}
-		#visuals h3{
-			font-size: 50px;
-			margin-bottom: 10px;
+		div.gallery1 {
+		  border: 1px solid #ccc;
+		  float: left;
+		  width: 100%;
+		  background-color: #ccefff;
 		}
-		#visuals{
-			text-align: center;
+
+		div.gallery2 {
+		  border: 1px solid #ccc;
+		  float: left;
+		  width: 100%;
+		  background-color: #f2ccff;
+		} 
+
+		div.gallery1 a, div.gallery2 a{
+			color: #9900cc;
 		}
-		#visuals img{
-			width: 1300px;
+
+		div.gallery1:hover, div.gallery2:hover {
+		  border: 1px solid #777;
+		}
+
+		div.desc {
+		  padding: 30px;
+		  text-align: center;
+		  font-size: 40px;
+		  font-family: 'Lato', sans-serif;
 		}
 	</style>
 </head>
 <body>
-	<h1>Visualisations</h1>
-	<div id="visuals">
-		<h3>Dashboard 1 - Price Wise Analysis</h3>
-		<img src="img/dashboard1.png">
-		<h3>Dashboard 2 - Hosted Listings Analysis</h3>
-		<img src="img/dashboard2.png">
-		<h3>Dashboard 3 - Availability Wise Analysis</h3>
-		<img src="img/dashboard3.png">
-		<h3>Dashboard 4 - Customer Reviews Analysis</h3>
-		<img src="img/dashboard4.png">
-		<h3>Dashboard 5 - Analysis of Minimum Nights stayed by Hosts</h3>
-		<img src="img/dashboard5.png">
-		<h3>Dashboard 6 - Geographical Map Visuals</h3>
-		<img src="img/dashboard6.png">
-	</div>
+		<h1>Analysis of Airbnb Listings in NYC</h1>
+
+		<div class="gallery1">
+		  <a href="img/dashboard1.png">
+		    <div class="desc">Price Wise Analysis</div>
+		  </a>
+		</div>
+
+		<div class="gallery2">
+		  <a href="img/dashboard2.png">
+		  	<div class="desc">Hosted Listings Analysis</div>
+		  </a>
+		</div>
+
+		<div class="gallery1">
+		  <a href="img/dashboard3.png">
+		  	<div class="desc">Availability Wise Analysis</div>
+		  </a>
+		</div>
+
+		<div class="gallery2">
+		  <a href="img/dashboard4.png">
+		  	<div class="desc">Customer Reviews Analysis</div>
+		  </a>
+		</div>
+
+		<div class="gallery1">
+		  <a href="img/dashboard5.png">
+		  	<div class="desc">Analysis of Minimum Nights stayed by Hosts</div>
+		  </a>
+		</div>
+
+		<div class="gallery2">
+		  <a href="img/dashboard6.png">
+		  	<div class="desc">Geographical Map Visuals</div>
+		  </a>
+		</div>
 </body>
 </html>
